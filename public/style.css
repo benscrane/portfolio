@@ -1,17 +1,15 @@
 body {
   font-family: sans-serif;
   margin: auto;
-  max-width: 1280px;
 }
 
 .navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+  background-color: rgb(5, 101, 126);
+  width: 100%;
 }
 
 .navbar a {
-  color: #aaa;
+  color: white;
   display: inline-block;
   font-size: 15px;
   padding: 10px;
