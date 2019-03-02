@@ -1,6 +1,38 @@
 body {
   font-family: "Montserrat", sans-serif;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+footer {
+  background-color: lightsteelblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.icon-wrap {
+  justify-content: center;
+}
+
+.icon {
+  font-size: 36px;
+  color: black;
+  margin: 0.4em;
+  padding: 0.2em;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -27,3 +59,6 @@ body {
   color: #ffffff;
 }
 
+.footnote {
+  text-align: center;
+}
