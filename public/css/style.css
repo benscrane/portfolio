@@ -49,7 +49,6 @@ footer {
 
 .navbar {
   background-color: #14213D;
-  color: #ffffff;
   display: flex;
   width: 100%;
   position: fixed;
@@ -63,7 +62,7 @@ footer {
 }
 
 .navbar a {
-  color: black;
+  color: #ffffff;
   display: inline-block;
   font-size: 20px;
   text-transform: uppercase;
