@@ -6,14 +6,21 @@ body {
 }
 
 footer {
-  background-color: lightsteelblue;
-  position: absolute;
-  bottom: 0;
+  background-color: lightgrey;
   width: 100%;
 }
 
 .flex {
   display: flex;
+}
+
+#home {
+  background-color: #14213D;
+  color: #ffffff;
+}
+
+#name {
+  color: #FF8811;
 }
 
 .row {
@@ -22,6 +29,11 @@ footer {
 
 .icon-wrap {
   justify-content: center;
+}
+
+.center-items {
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -39,6 +51,9 @@ footer {
   background-color: lightgrey;
   display: flex;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  display: none;
 }
 
 .spacer {
@@ -61,4 +76,8 @@ footer {
 
 .footnote {
   text-align: center;
+}
+
+.full-height {
+  height: 100vh;
 }
