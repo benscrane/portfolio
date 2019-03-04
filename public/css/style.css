@@ -116,7 +116,11 @@ textarea:focus, input:focus {
 }
 
 #about {
-  padding-top: 75px;
+  padding-top: 5vh;
+}
+
+#projects {
+  padding-top: 5vh
 }
 
 #contact {
