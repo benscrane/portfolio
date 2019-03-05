@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="GitLab Pages">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Built By Ben</title>
     <!-- HOSTED -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
@@ -20,7 +21,7 @@
   </head>
   <body>
     <div id="nav" class="bg-black w-full p-2">
-      <div class="flex uppercase text-2xl">
+      <div class="flex uppercase text-md md:text-2xl">
         <!-- <a href="#">Ben Crane</a> -->
         <div class="flex-grow"></div>
         <a href="#home">Home</a>
@@ -32,18 +33,27 @@
 
     <div class="h-screen bg-blue-darkest text-white flex items-center justify-center" id="home">
       <div>
-        <p class="text-5xl font-semibold">
+        <p class="text-xl md:text-5xl font-semibold">
           Hello, I'm <span class="text-orange-dark">Ben Crane</span>.<br/>
           I'm a full stack web developer.
         </p>
       </div>
     </div>
 
-    <div id="about">
-      <p class="uppercase text-5xl font-semibold">About</p>
+    <div id="about" class="bg-grey-lighter w-full flex flex-wrap justify-center">
+      <div class="w-full h-24"></div>
+      <div class="w-full text-center">
+        <p class="uppercase text-5xl font-semibold block">About</p>
+      </div>
+      <div class="flex w-1/2">
+        <div class="w-1/3">
+          <img class="border rounded-full" src="assets/headshot.jpg">
+        </div>
+      </div>
     </div>
 
-    <div id="projects">
+    <div id="projects" class="w-full flex flex-wrap justify-center">
+      <div class="w-full h-24"></div>
       <p class="uppercase text-5xl font-semibold">Projects</p>
     </div>
 
@@ -62,23 +72,24 @@
             <textarea id="message" placeholder="Your message"></textarea>
           </div>
           <div>
-            <button type="Submit">Submit</button>
+            <button
+              class="uppercase bg-transparent text-white text-xl font-semibold py-2 px-2 my-4 border border-white hover:bg-green-dark hover:border-green-dark"
+              type="Submit">Submit</button>
           </div>
         </form>
-        <div class="flex-grow"></div>
-        <div class="flex justify-center items-center text-5xl">
+        <div class="flex justify-center items-center text-5xl pt-5">
           <a href="https://twitter.com/bencrane">
-            <div class="text-white px-4">
+            <div class="text-white hover:text-blue-light px-4">
               <i class="mdi mdi-twitter"></i>
             </div>
           </a>
           <a href="https://github.com/benscrane">
-            <div class="text-white px-4">
+            <div class="text-white hover:text-blue-light px-4">
               <i class="mdi mdi-github-circle"></i>
             </div>
           </a>
           <a href="mailto:bencrane@pm.me">
-            <div class="text-white px-4">
+            <div class="text-white hover:text-blue-light px-4">
               <i class="mdi mdi-email"></i>
             </div>
           </a>
@@ -87,23 +98,6 @@
     </div>
 
     <footer class="bg-grey-dark p-3">
-      <!-- <div class="flex justify-center items-center text-5xl">
-        <a href="https://twitter.com/bencrane">
-          <div class="text-black px-4">
-            <i class="mdi mdi-twitter"></i>
-          </div>
-        </a>
-        <a href="https://github.com/benscrane">
-          <div class="text-black px-4">
-            <i class="mdi mdi-github-circle"></i>
-          </div>
-        </a>
-        <a href="mailto:bencrane@pm.me">
-          <div class="text-black px-4">
-            <i class="mdi mdi-email"></i>
-          </div>
-        </a>
-      </div> -->
       <div>
         <div class="text-center">BEN CRANE <span>&copy; 2019</span></div>
       </div>

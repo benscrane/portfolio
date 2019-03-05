@@ -7,10 +7,6 @@ body {
   box-sizing: border-box;
 }
 
-button {
-  text-transform: uppercase;
-}
-
 #nav {
   position: fixed;
   top: 0px;
@@ -29,10 +25,6 @@ button {
 
 #main-header {
   font-size: 1.5em;
-}
-
-#about {
-  padding-top: 5vh;
 }
 
 #projects {
