@@ -7,6 +7,7 @@
     <!-- HOSTED -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- LOCAL -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,10 +19,10 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div id="nav">
-      <div class="navbar">
+    <div id="nav" class="bg-black w-full p-2">
+      <div class="flex uppercase text-2xl">
         <!-- <a href="#">Ben Crane</a> -->
-        <div class="spacer"></div>
+        <div class="flex-grow"></div>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -29,32 +30,28 @@
       </div>
     </div>
 
-    <div class="full-height center-items flex" id="home">
-      <div id="main-header">
-        <h1>
-          Hello, I'm <span id="name">Ben Crane</span>.<br/>
+    <div class="h-screen bg-blue-darkest text-white flex items-center justify-center" id="home">
+      <div>
+        <p class="text-5xl font-semibold">
+          Hello, I'm <span class="text-orange-dark">Ben Crane</span>.<br/>
           I'm a full stack web developer.
-        </h1>
+        </p>
       </div>
     </div>
 
-    <div class="full-height" id="about">
-      <div>
-        <h1>About</h1>
-      </div>
+    <div id="about">
+      <p class="uppercase text-5xl font-semibold">About</p>
     </div>
 
     <div id="projects">
-      <div>
-        <h1>Projects</h1>
-      </div>
+      <p class="uppercase text-5xl font-semibold">Projects</p>
     </div>
 
-    <div id="contact" class="center-text center-items flex">
-      <div>
-        <h1>Contact</h1>
-        <h3>Have a question or want to work together?</h3>
-        <form>
+    <div id="contact" class="text-center bg-black text-white h-screen flex items-center justify-center">
+      <div class="w-full md:max-w-sm flex flex-col content-between">
+        <p class="uppercase text-5xl font-semibold py-4">Contact</p>
+        <p class="text-xl">Have a question or want to work together?</p>
+        <form class="py-4">
           <div>
             <input type="text" id="name" placeholder="Name">
           </div>
@@ -68,31 +65,50 @@
             <button type="Submit">Submit</button>
           </div>
         </form>
+        <div class="flex-grow"></div>
+        <div class="flex justify-center items-center text-5xl">
+          <a href="https://twitter.com/bencrane">
+            <div class="text-white px-4">
+              <i class="mdi mdi-twitter"></i>
+            </div>
+          </a>
+          <a href="https://github.com/benscrane">
+            <div class="text-white px-4">
+              <i class="mdi mdi-github-circle"></i>
+            </div>
+          </a>
+          <a href="mailto:bencrane@pm.me">
+            <div class="text-white px-4">
+              <i class="mdi mdi-email"></i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
-    <footer>
-      <div class="icon-wrap flex row">
+    <footer class="bg-grey-dark p-3">
+      <!-- <div class="flex justify-center items-center text-5xl">
         <a href="https://twitter.com/bencrane">
-          <div class="icon">
+          <div class="text-black px-4">
             <i class="mdi mdi-twitter"></i>
           </div>
         </a>
         <a href="https://github.com/benscrane">
-          <div class="icon">
+          <div class="text-black px-4">
             <i class="mdi mdi-github-circle"></i>
           </div>
         </a>
         <a href="mailto:bencrane@pm.me">
-          <div class="icon">
+          <div class="text-black px-4">
             <i class="mdi mdi-email"></i>
           </div>
         </a>
-      </div>
+      </div> -->
       <div>
-        <div class="footnote">BEN CRANE <span>&copy; 2019</span></div>
+        <div class="text-center">BEN CRANE <span>&copy; 2019</span></div>
       </div>
     </footer>
+    <script src="js/zenscroll-min.js"></script>
   </body>
 </html>
 
