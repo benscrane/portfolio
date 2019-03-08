@@ -7,6 +7,22 @@ body {
   box-sizing: border-box;
 }
 
+#nav {
+  position: fixed;
+  top: 0px;
+  display: none;
+}
+
+#nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
 .sentence {
   text-align: left;
 }
@@ -81,27 +97,25 @@ body {
 	100% { opacity: 0; }
 }
 
+#taskalatorProject {
+  background: url("/public/assets/TaskEscalatorHome.png") center;
+  background-size: cover;
+  height: 200px;
+}
+
+#leaderboardProject {
+  background: url("/public/assets/LeaderboardHome.png") center;
+  background-size: cover;
+  height: 200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Keep above this line */
-
-#nav {
-  position: fixed;
-  top: 0px;
-  display: none;
-}
-
-#nav a {
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #ffffff;
-}
-
-#main-header {
-  font-size: 1.5em;
-}
 
 #projects {
   padding-top: 5vh
