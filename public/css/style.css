@@ -98,13 +98,13 @@ body {
 }
 
 #taskalatorProject {
-  background: url("/public/assets/TaskEscalatorHome.png") center;
+  background: url("https://s3.amazonaws.com/portfolio-image-storage/taskalator_screenshot.png") center;
   background-size: cover;
   height: 200px;
 }
 
 #leaderboardProject {
-  background: url("/public/assets/LeaderboardHome.png") center;
+  background: url("https://s3.amazonaws.com/portfolio-image-storage/LeaderboardHome.png") center;
   background-size: cover;
   height: 200px;
 }
