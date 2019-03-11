@@ -97,22 +97,36 @@ body {
 	100% { opacity: 0; }
 }
 
-#taskalatorProject {
-  background: url("../assets/taskalator_screenshot.png") center;
-  background-size: cover;
-  height: 200px;
-}
-
-#leaderboardProject {
-  background: url("../assets/LeaderboardHome.png") center;
-  background-size: cover;
-  height: 200px;
-}
-
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.project-image {
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.card-content {
+  position: absolute;
+  transition: 0.5s ease;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.card:hover .project-image {
+  opacity: 0.2;
+}
+
+.card:hover .card-content {
+  opacity: 1;
 }
 
 /* Keep above this line */
