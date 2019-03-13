@@ -30,7 +30,7 @@
       </div>
     </div>
     <!-- HERO SECTION -->
-    <div class="h-screen bg-blue-darkest text-white flex items-center justify-center" id="home">
+    <div class="h-screen bg-blue-darkest text-white flex flex-col items-center justify-center" id="home">
       <div class="wrapper">
         <h2 class="text-xl md:text-5xl font-semibold sentence">
           Hello, I'm <span class="text-orange-dark">Ben Crane</span>.<br/>
@@ -41,6 +41,13 @@
             <span>furniture.</span>
           </div>
         </h2>
+      </div>
+      <div class="mt-10">
+        <a
+          class="text-white no-underline text-xl md:text-5xl"
+          href="#about">
+          <i class="mdi mdi-chevron-double-down"></i>
+        </a>
       </div>
     </div>
     <!-- ABOUT SECTION -->
@@ -63,43 +70,43 @@
             <div class="bg-blue-light" style="width:85%">
               <div class="bg-blue w-24 p-2 flex justify-center">HTML</div>
             </div>
-            <span class="self-center">90%</span>
+            <span class="self-center hidden md:inline-block">90%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:75%">
               <div class="bg-blue w-24 p-2 flex justify-center">CSS</div>
             </div>
-            <span class="self-center">80%</span>
+            <span class="self-center hidden md:inline-block">80%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:80%">
               <div class="bg-blue w-24 p-2 flex justify-center">Javascript</div>
             </div>
-            <span class="self-center">85%</span>
+            <span class="self-center hidden md:inline-block">85%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:65%">
               <div class="bg-blue w-24 p-2 flex justify-center">NodeJS</div>
             </div>
-            <span class="self-center">70%</span>
+            <span class="self-center hidden md:inline-block">70%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:80%">
               <div class="bg-blue w-24 p-2 flex justify-center">Vue</div>
             </div>
-            <span class="self-center">85%</span>
+            <span class="self-center hidden md:inline-block">85%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:40%">
               <div class="bg-blue w-24 p-2 flex justify-center">Cabinetry</div>
             </div>
-            <span class="self-center">30%</span>
+            <span class="self-center hidden md:inline-block">30%</span>
           </div>
           <div class="w-full bg-grey-light flex justify-between my-1">
             <div class="bg-blue-light" style="width:55%">
               <div class="bg-blue w-24 p-2 flex justify-center">Climbing</div>
             </div>
-            <span class="self-center">5.10</span>
+            <span class="self-center hidden md:inline-block">5.10</span>
           </div>
         </div>
       </div>
@@ -191,13 +198,13 @@
         <p class="text-xl">Have a question or want to work together?</p>
         <form id="contactForm" class="py-4">
           <div>
-            <input type="text" id="contactName" placeholder="Name">
+            <input type="text" id="contactName" placeholder="Name" required>
           </div>
           <div>
-            <input type="email" id="contactEmail" placeholder="Email">
+            <input type="email" id="contactEmail" placeholder="Email" required>
           </div>
           <div>
-            <textarea id="contactMessage" placeholder="Your message"></textarea>
+            <textarea id="contactMessage" placeholder="Your message" required></textarea>
           </div>
           <div
             id="contactNotification"

@@ -25,10 +25,10 @@ $(function() {
         }
       })
         .done(function() {
-          $("#contactName").val("");
-          $("#contactEmail").val("");
-          $("#contactMessage").val("");
         });
+      $("#contactName").val("");
+      $("#contactEmail").val("");
+      $("#contactMessage").val("");
       $("#contactNotification").removeClass("hidden");
       event.preventDefault();
     });
