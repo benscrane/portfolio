@@ -186,23 +186,28 @@
     </div>
     <!-- CONTACT SECTION -->
     <div id="contact" class="text-center bg-black text-white h-screen flex items-center justify-center">
-      <div class="w-full md:max-w-sm flex flex-col content-between">
+      <div class="w-full md:max-w-md flex flex-col content-between">
         <p class="uppercase text-5xl font-semibold py-4">Contact</p>
         <p class="text-xl">Have a question or want to work together?</p>
-        <form class="py-4">
+        <form id="contactForm" class="py-4">
           <div>
-            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="contactName" placeholder="Name">
           </div>
           <div>
-            <input type="email" id="email" placeholder="Email">
+            <input type="email" id="contactEmail" placeholder="Email">
           </div>
           <div>
-            <textarea id="message" placeholder="Your message"></textarea>
+            <textarea id="contactMessage" placeholder="Your message"></textarea>
+          </div>
+          <div
+            id="contactNotification"
+            class="w-full bg-green-dark hidden text-black py-2">
+            <p>Your message was sent successfully, thanks!</p>
           </div>
           <div>
             <button
               class="uppercase bg-transparent text-white text-xl font-semibold py-2 px-2 my-4 border border-white hover:bg-green-dark hover:border-green-dark"
-              type="Submit">Submit</button>
+              type="submit">Submit</button>
           </div>
         </form>
         <div class="flex justify-center items-center text-5xl pt-5">
